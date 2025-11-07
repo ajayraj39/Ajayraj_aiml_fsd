@@ -8,4 +8,5 @@ function sayGoodbye() {
 }
  
 // Passing sayGoodbye as a callback
+
 greet("Ashutosh", sayGoodbye);
