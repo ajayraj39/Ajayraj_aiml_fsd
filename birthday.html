@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      color: #ff4081;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background-color: #ff4081;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e73370;
+    }
+
+    #moreWish {
+      display: none;
+      margin-top: 20px;
+      color: #555;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <p>Wishing you a day filled with love and joy!</p>
+    <button class="btn" onclick="showMore()">Click for a Surprise 🎁</button>
+    <p id="moreWish">You are amazing, and today is all about you. Have the best birthday ever! 🥳</p>
+  </div>
+
+  <script>
+    function showMore() {
+      const msg = document.getElementById('moreWish');
+      msg.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.container{
+    border: 5px solid blueviolet;
+}
+.col-12,.col-md-9, .col-md-3{
+    border: 6px solid aqua;
+    
+}
+#header{
+    background-color: aquamarine;
+}
+#menu{
+    background-color: beige;
+}
+
+#footer{
+    border: 5px solid red;
+}

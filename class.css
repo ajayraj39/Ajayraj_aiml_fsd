@@ -1,0 +1,13 @@
+.container{
+    border : 5px solid red;
+
+}
+.col-12{
+    border : 3px solid pink;
+    text-align: center;
+}
+
+#header{
+    background-color: yellow;
+}
+

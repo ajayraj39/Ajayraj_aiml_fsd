@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList </title>
+</head>
+<body>
+    <h1 id="list">To-Do List</h1>
+    <input type="text" id="text" placeholder="Enter Text ">
+    <!-- <textarea name="textarea" id="textarea">Enter Text</textarea> -->
+    
+    <button id="Button">Add Task</button>
+
+    <script> 
+        const taskInput = document.getElementById("taskInput");
+        const addBtn = document.getElementById("addBtn");
+        const taskList = document.getElementById("taskList");
+
+        addBtn.addEventListener("click",addtask);
+        function addtask(){
+            const taskText=taskInput.value.trim();
+            if(taskText==" "){
+                alert("Please enter a task");
+                return;
+            }
+            const li =document.createElement("li");
+            constspan=document.createElement("button");
+            span.textContent=taskText;
+            //tick btn
+            const tickbtn=document.createElement("button");
+            tickbtn.textContent ="✔"
+            tickbtn.className = "tickbtn"
+            tickbtn.addEventListener("click", function()){
+                span.classList.toggle("done"); 
+            }
+
+        }
+    </script>
+</body>
+</html>

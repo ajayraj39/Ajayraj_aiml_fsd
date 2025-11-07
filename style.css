@@ -1,0 +1,12 @@
+.row{
+    border: 5px solid red;
+}
+.col-5,.col-7{
+    border: 5px solid blue;
+}
+#pink{
+    background-color: pink;
+}
+#yellow{
+    background-color: yellow;
+}
